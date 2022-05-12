@@ -1,0 +1,80 @@
+$aBaseColor: #848484; // a 标签平时颜色
+$aBaseHoverColor: #24adde; // a 标签 hove 颜色
+$bgc: #fff; // 常用背景色
+$bodyBGC: #f4f4f6; // body 的背景色
+$placeholderColor: #a1a1a1; // 占位文字颜色
+$fontColor: #363636; // 基础字体颜色
+$fontMainImportantColor: #000000; // 标题等重要字体颜色
+$fontMinorColor: #333333; // 次要字体颜色
+//$themeColor: #24adde; // 主题色
+$themeColor: rgb(95, 152, 218); // 主题色
+$themeColorBG: #58b28d; // 背景主题色
+$themeColorBGLight: #84ccc9; // 淡一点的背景主题色
+$themeColorBGLightMin: #FFF5EF; //  背景主题色的淡化版
+$successColor: #67C23A;// 成功颜色
+//$warningColor: #ff9900; // 警告颜色
+$warningColor: #ff3600; // 警告颜色
+$dangerColor: #FF0000; // 危险颜色
+$bgGrayColor: #F0F2F5; // 灰色背景颜色
+$bgGrayColorLight: #f7f9f9; // 灰色背景颜色的淡化版
+$hotColor: #f64d21; // 热门颜色 或者 极其重要提示
+$borderColor: #D9D9D9; // 边框基础颜色
+$borderColorLight: #F0F0F0; // 边框基础颜色淡化版
+
+$buttonBlueBgColor: #2D8DFE; // 蓝色按钮
+$buttonBlueBgColorLight: #66b1ff; // 蓝色 hover 按钮
+
+// 修改按钮固定颜色
+$updateBtnBgColor: #2D8DFE;
+// 添加按钮颜色 淡化 可用于 hover
+$updateBtnBgColorLight: #66b1ff;
+
+// 修改状态固定颜色
+$changStatusColor: #FF9813;
+$changStatusColorLight: rgba(255, 152, 19, 0.8);
+
+// 删除按钮颜色
+$deleteStatusColor: #E3531F;
+$deleteStatusColorLight: rgba(227, 83, 31, 0.8);
+
+
+
+$fontSize: 14px; // 基础字体大小
+$fontMinorSize: 12px; // 次要字体大小
+$fontMainImportantSize: 18px; // 标题等重要字体大小 倾向于文章标题
+$fontBigSize: 20px; // 标题等重要字
+$w: 1640px;// 版心， 登陆 和 注册 需要， 头部， 页脚
+// sidebar 模板所需
+
+$menuText: #A6AAAE;
+$menuActiveText: $themeColor;
+$subMenuActiveText: $themeColor; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg: #2A1C1D;
+$menuHover: #43342e;
+
+$subMenuBg: #28170F;
+$subMenuHover: #43342e;
+
+// 菜单选中背景颜色
+$menuActiveBg: #FFF5EF;
+$menuActiveLineColor: #FF8039;
+
+$sideBarWidth: 210px;
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+// 导出变量， 让其在js中可用 例子： import styles from '@/styles/variables.scss' const millis = parseInt(styles.animationMillis)
+:export {
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+    bgc: $bgc;
+    themeColor: $themeColor;
+}
