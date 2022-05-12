@@ -3,7 +3,7 @@
 
 ```bash
 # clone the project
-git clone https://git.impool.com/storeros/ipos-web.git
+git clone https://github.com/StorerOS/ipos-web.git
 
 # enter the project directory
 cd ipos-web
